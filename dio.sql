@@ -40,8 +40,15 @@ SELECT * FROM pessoa WHERE id=4
 
 DELETE * FROM pessoa WHERE id=4
 
-/*Organizando os dados da tabela em ordem crescente e decrescente com o comando 'ORDER'*/
+/*Para organizar os dados da tabela em ordem crescente e decrescente com o comando 'ORDER'*/
 
 SELECT * FROM pessoa ORDER BY nome /*para crescente*/
 
 SELECT * FROM pessoa ORDER BY nome DESC /*para decrescente*/
+
+
+
+/*Para contar um grupo, como vemos abaixo, podemos utilizar o comando 'COUNT' e 'GROUP BY'
+no exemplo abaixo o comando retorna quantos valores possui cadastrado em cada gênero*/
+
+SELECT COUNT(id), genero FROM pessoa GROUP BY genero;
