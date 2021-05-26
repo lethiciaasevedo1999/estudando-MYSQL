@@ -29,3 +29,13 @@ SELECT (nascimento)  FROM pessoa
 UPDATE pessoa SET nome='Nadia' WHERE id=2;
 UPDATE pessoa SET nome='Pedro Lucas' WHERE id=3;
 UPDATE pessoa SET nome='Sophia' WHERE id=4;
+
+/*Exluindo algum dado da tabela*/
+
+/*Por boas práticas, é correto fazer um 'SELECT', para visualizar se 
+é realmente esse dado que desejamos excluir, depois apenas substituimos o 
+'SELECT' por 'DELETE'*/
+
+SELECT * FROM pessoa WHERE id=4
+
+DELETE * FROM pessoa WHERE id=4
