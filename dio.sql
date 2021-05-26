@@ -39,3 +39,9 @@ UPDATE pessoa SET nome='Sophia' WHERE id=4;
 SELECT * FROM pessoa WHERE id=4
 
 DELETE * FROM pessoa WHERE id=4
+
+/*Organizando os dados da tabela em ordem crescente e decrescente com o comando 'ORDER'*/
+
+SELECT * FROM pessoa ORDER BY nome /*para crescente*/
+
+SELECT * FROM pessoa ORDER BY nome DESC /*para decrescente*/
