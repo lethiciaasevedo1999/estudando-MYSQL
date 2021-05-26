@@ -26,6 +26,6 @@ SELECT (nascimento)  FROM pessoa
 
 /*Atualizando dados na tabela, passando como parâmetro o ID*/
 
-UPDATE pessoa SET nome='Nadia' WHERE id=2
-UPDATE pessoa SET nome='Pedro Lucas' WHERE id=3
-UPDATE pessoa SET nome='Sophia' WHERE id=4
+UPDATE pessoa SET nome='Nadia' WHERE id=2;
+UPDATE pessoa SET nome='Pedro Lucas' WHERE id=3;
+UPDATE pessoa SET nome='Sophia' WHERE id=4;
